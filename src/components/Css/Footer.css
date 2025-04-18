@@ -1,0 +1,118 @@
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding:4px;
+    /* border: 2px solid #002645; */
+    color: #002645;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .social-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .footer {
+    background: white;
+    color: black;
+    border-top: 1px solid #ccc;
+    padding: 40px 0;
+  }
+  
+  /* Footer headings */
+  .footer-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer links */
+  .footer-links li a {
+    color: #555;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .footer-links li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #0D3B66;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .footer-links li a:hover {
+    color: #0D3B66;
+  }
+  
+  .footer-links li a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Footer contact */
+  .footer-contact li {
+    display: flex;
+    align-items: center;
+    color: #555;
+  }
+  
+  .footer-contact li .icon {
+    margin-right: 8px;
+    color: #11B5E4;
+  }
+  
+  /* Social media links */
+  .social-link {
+    color: #555;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-link:hover {
+    color: #0D3B66;
+  }
+  
+  /* Google Map */
+  .google-map {
+    margin-top: 16px;
+    width: 160px;
+    height: 160px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .google-map iframe {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Footer bottom */
+  .footer-bottom {
+    border-top: 1px solid #ccc;
+    margin-top: 24px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-legal a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-legal a:hover {
+    color: #0D3B66;
+  }
+  

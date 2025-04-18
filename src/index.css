@@ -1,0 +1,273 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* --background: 240 10% 3.9%; */
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 142.1 70.6% 45.3%;
+    --primary-foreground: 144.9 80.4% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 142.4 71.8% 29.2%;
+    --radius: 0.5rem;
+    
+    --sidebar-background: 240 10% 3.9%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 142.1 70.6% 45.3%;
+    --sidebar-primary-foreground: 144.9 80.4% 10%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 142.4 71.8% 29.2%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    /* font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03"; */
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .heading-lg {
+    @apply text-3xl font-bold tracking-tight sm:text-5xl md:text-6xl text-white;
+  }
+
+  .heading-md {
+    @apply text-2xl font-bold tracking-tight sm:text-3xl text-white;
+  }
+
+  .paragraph {
+    @apply text-lg leading-7 text-gray-300;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-5 py-3 text-base font-medium rounded-md text-black bg-intell-green hover:bg-intell-lightGreen transition duration-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-5 py-3 border border-gray-600 text-base font-medium rounded-md text-white bg-transparent hover:border-intell-green hover:text-intell-green transition duration-200;
+  }
+
+  .card-shadow {
+    @apply shadow-md hover:shadow-lg shadow-intell-green/10 hover:shadow-intell-green/20 transition-shadow duration-200;
+  }
+}
+
+/* Chatbot animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chat-fadeInUp {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+/* Animation utilities */
+.animate-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animate-delay-500 {
+  animation-delay: 500ms;
+}
+
+.animate-delay-700 {
+  animation-delay: 700ms;
+}
+
+.animate-delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.glass-morphism {
+  @apply backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_4px_12px_-2px_rgba(0,0,0,0.3)];
+}
+
+.neo-blur {
+  @apply backdrop-blur-2xl bg-black/40 border border-white/10;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-br from-white via-white/90 to-white/70 bg-clip-text text-transparent;
+}
+
+.text-gradient-primary {
+  @apply bg-gradient-to-br from-intell-green via-intell-lightGreen to-intell-green/60 bg-clip-text text-transparent;
+}
+
+/* New glow effect for the accent colors */
+.glow-effect {
+  @apply relative;
+}
+
+.glow-effect::after {
+  content: '';
+  @apply absolute -z-10 w-full h-full rounded-full bg-intell-green animate-glow;
+  filter: blur(30px);
+  opacity: 0.5;
+}
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* White */
+    --foreground: 213 100% 13%; /* Blue Meridian */
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 100% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 100% 13%;
+
+    --primary: 199 98% 34%; /* Reef Escape */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 213 98% 23%; /* Blue Meridian */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 213 98% 23%;
+    --muted-foreground: 199 98% 70%;
+
+    --accent: 213 98% 23%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 60% 85%;
+    --input: 213 60% 85%;
+    --ring: 199 98% 34%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 213 100% 13%; /* Blue Meridian */
+    --sidebar-foreground: 0 0% 100%; /* White */
+
+    --sidebar-primary: 199 98% 34%; /* Reef Escape */
+    --sidebar-primary-foreground: 0 0% 100%;
+
+    --sidebar-accent: 213 98% 23%; /* Blue Meridian */
+    --sidebar-accent-foreground: 0 0% 100%;
+
+    --sidebar-border: 213 80% 80%;
+    --sidebar-ring: 199 98% 34%;
+  }
+
+  .dark {
+    --background: 212 100% 13%; /* Rhapsody in Blue */
+    --foreground: 0 0% 100%;
+
+    --card: 212 100% 13%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 212 100% 13%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 199 98% 34%; /* Reef Escape */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 98% 23%; /* Blue Meridian */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 213 98% 23%;
+    --muted-foreground: 199 98% 70%;
+
+    --accent: 213 98% 23%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 60% 25%;
+    --input: 213 60% 25%;
+    --ring: 199 98% 34%;
+
+    --sidebar-background: 212 100% 13%; /* Rhapsody in Blue */
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 199 98% 34%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 213 98% 23%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 213 60% 25%;
+    --sidebar-ring: 199 98% 34%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/*!
+ * Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-display: block;
+  font-weight: 400;
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-display: block;
+  font-weight: 900;
+  src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-display: block;
+  font-weight: 400;
+  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype"); }

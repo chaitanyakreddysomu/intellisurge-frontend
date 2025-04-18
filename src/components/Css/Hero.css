@@ -1,0 +1,106 @@
+/* ===== Hero Section Styles ===== */
+.hero-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 5rem;
+  }
+  
+  
+  .hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: white;
+  }
+  
+  .heading-lg {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .text-gradient-primary {
+    /* background: linear-gradient(90deg, #00c6ff, #0072ff); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .paragraph {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: white;
+    opacity: 0.9;
+  }
+  
+  /* ===== Button Styles ===== */
+  .btn-primary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #002645;
+    transform: translateY(-2px);
+  }
+  
+  .btn-secondary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: transparent;
+    color: #002645;
+    border: 2px solid #f5f7f9;
+    padding: 12px 24px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #002645 !important;
+    color: white !important;
+    transform: translateY(-2px);
+  }
+  
+  /* ===== Animation Styles ===== */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .animate-text-reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+  
+  .glow-effect {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Animation Delay */
+  .animate-delay-200 { transition-delay: 0.2s; }
+  .animate-delay-300 { transition-delay: 0.3s; }
+  .animate-delay-400 { transition-delay: 0.4s; }
+  .animate-delay-500 { transition-delay: 0.5s; }
+
+

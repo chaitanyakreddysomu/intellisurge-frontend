@@ -1,0 +1,32 @@
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #002645;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 12px;
+    border-radius: 5px;
+  }
+  
+
+  .btn-primary {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background-color: #002645 !important;
+    color: #fff !important;
+    border: 2px solid #002645;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    /* background-color: fillter(blur(30px)) !important; */
+  }
+  
+  .btn-primary:hover {
+    background-color: #fff !important;
+    color: #002645 !important;
+  }
+  
+  .nav-link {
+    font-weight: 300;
+    transition: color 0.3s ease;
+  }
+  
